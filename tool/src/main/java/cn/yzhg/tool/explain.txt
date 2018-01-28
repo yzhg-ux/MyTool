@@ -1,0 +1,47 @@
+explain:
+   使用该工具方法,需要在Application中进行初始化
+
+
+
+   MyTool.initTool(context); : 初始化APP
+   MyTool.initBug(true,null); 开启日志打印,第二个参数表示设置统一的tagName
+   QQWeChat.isWXAvailable(); 判断本地是否安装了微信
+   QQWeChat.isQQClientAvailable();  判断本地是否安装了QQ
+   QQWeChat.isExistAPP(String appName);  判断本地是否安装了某个APP,appName:包名
+   LogTool 日志打印工具类
+
+   SDCardOperation : 操作SD卡
+        SDCardOperation.ExistSDCardMkdirs("目录",size);
+            //判断SD卡某个目录是否存在,如果不存在就创建一个目录
+                size 设置SD卡最小大小
+        SDCardOperation.ExistSDCard 判断SD卡是否存在
+        SDCardOperation.getSDAllSize(SDCardOperation.M) 判断SD卡剩余容量
+            M 返回MB  K 返回KB B返回byte
+
+   KeyboardUtils : 软键盘操作
+        KeyboardUtils.closeKeyboardForCommonAct(context,view) 指定View关闭软键盘
+        KeyboardUtils.closeKeyboardCommAct(context) 普通关闭
+        KeyboardUtils.closeWhenOnCreate(context) 进入画面时，关闭键盘
+        KeyboardUtils.hintKbOne(context) 关闭 开启 切换
+
+   PhoneEmail : 判断手机号,邮箱格式
+
+   ActivityCollector : 保存Activity,做到一键退出
+
+    PrefUtils.getBoolean(prefsName,key,defaultValue) 储存和读取SP数据
+        prefsName : SP的名称
+    PrefUtils.clearNumber(prefsName) 清除prefsName名下Sp中的数据
+        prefsName : SP的名称
+     ObjectSaveUtil.saveObject();  保存对象到SP
+     ObjectSaveUtil.clearNumber();  清除
+
+    ThreadUtils : 主(子)线程切换
+
+
+
+
+
+
+
+
+

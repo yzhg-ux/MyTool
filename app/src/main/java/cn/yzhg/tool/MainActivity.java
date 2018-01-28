@@ -4,6 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import cn.yzhg.tool.tool.toast.ToastTool;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         but_toast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ToastTool.showToast(MainActivity.this,"哈哈哈哈哈");
+                ToastTool.showToast(R.string.app_name, Toast.LENGTH_LONG);
             }
         });
     }
