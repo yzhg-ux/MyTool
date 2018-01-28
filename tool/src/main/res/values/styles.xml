@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="DarkAnimation">
+        <item name="android:windowEnterAnimation">@anim/dark_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/dark_fade_out</item>
+    </style>
+
+    <!-- 动画执行时间 -->
+    <declare-styleable name="DecimalEditText">
+        <attr name="decimalNumber" format="integer"/>
+    </declare-styleable>
+
+</resources>

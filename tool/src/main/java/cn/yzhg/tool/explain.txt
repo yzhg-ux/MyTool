@@ -1,8 +1,6 @@
 explain:
    使用该工具方法,需要在Application中进行初始化
 
-
-
    MyTool.initTool(context); : 初始化APP
    MyTool.initBug(true,null); 开启日志打印,第二个参数表示设置统一的tagName
    QQWeChat.isWXAvailable(); 判断本地是否安装了微信
